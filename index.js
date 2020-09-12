@@ -3,7 +3,7 @@ const express = require('express'),
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
-const leaderRouter = require('./routes/leaderRouter');
+const leaderRouter = require('./leaderRouter');
 const hostname = 'localhost';
 const port = 3000;
 
