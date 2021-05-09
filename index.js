@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const leaderRouter = require('./leaderRouter');
 const hostname = 'localhost';
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 const app = express();
 app.use(morgan('dev'));
