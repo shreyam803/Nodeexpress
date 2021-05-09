@@ -12,17 +12,17 @@ leaderRouter.route('/')
     next();
 })
 .get((req,res,next) => {
-    res.end('Will send all the leaderes to you!');
+    res.end('Will send all the leaders to you!');
 })
 .post((req, res, next) => {
     res.end('Will add the leader: ' + req.body.name + ' with details: ' + req.body.description);
 })
 .put((req, res, next) => {
     res.statusCode = 403;
-    res.end('PUT operation not supported on /leaderes');
+    res.end('PUT operation not supported on /leaders');
 })
 .delete((req, res, next) => {
-    res.end('Deleting all leaderes');
+    res.end('Deleting all leaders');
 });
 
 module.exports = leaderRouter;
